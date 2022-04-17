@@ -1,0 +1,48 @@
+﻿@model Expense_Tracker3.Models.Expense
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center text-primary">Edit Category</h1>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="Edit" asp-controller="Expense">
+                        <div class="form-group">
+                            <label asp-for="CategoryId_Fk"></label>
+                            <input type="hidden" asp-for="ExpenseId" />
+                            <select asp-for="CategoryId_Fk" class="form-control" asp-items="ViewBag.CategoryId_Fk"></select>
+                           
+
+                            <label asp-for="Date"></label>
+
+                            <input type="text" asp-for="Date" class="form-control" />
+
+                            <label asp-for="Amount"></label>
+
+                            <input type="text" asp-for="Amount" class="form-control" />
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-sm btn-outline-success floatright" />
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Expense_Tracker3.Models.Expense>
+
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-9
+             
+             offset-2">
+            <h1 class="text-center text-primary">Expense Record</h1>
+            <form  class="p-3 mb-2 bg-success text-white">
+                <span class="text text-dark">Start Date :</span> <input type="date" name="startDate" />
+                <span class="text text-dark">End Date :</span> <input type="date" name="endDate" />
+                <input type="submit" value="Get Records" class="btn btn-primary" />
+                <a asp-action="Index" asp-controller="Expense" class="btn btn-primary"> Show All Records </a>
+            </form>
+            <a class="btn btn-sm btn-success m-1" asp-controller="Expense" asp-action="Create">Create</a>
+            <table class="table table-bordered">
+                <tr class="text-center">
+
+                    <th>Category_Name</th>
+                    <th>Expense Date</th>
+                    <th>Amount</th>
+
+                    <th>Action</th>
+                </tr>
+
+
+
+                @foreach (var item in Model)
+                {
+                    <tr class="text-center">
+                        <td>@item.Category.Name</td>
+                        <td>@item.Date</td>
+                        <td>@item.Amount</td>
+
+                        <td>
+                            <a class="btn btn-sm btn-warning" asp-controller="Expense" asp-action="Edit" asp-route-id="@item.ExpenseId">Edit</a>
+                            <a class="btn btn-sm btn-danger" asp-controller="Expense" asp-action="Delete" asp-route-id="@item.ExpenseId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
