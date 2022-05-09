@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rcMJFOuIy+RfwPmjwR/gLbH4PwjxXRvqSodL+1AT1fv8zBxLT9fJIPUQpV9GPEcfsvIN79n0a1p4RZnn7CNdpg==",
+  "dgSpecHash": "QNvaYgQfx93W0MvpWMZGy/lV0wluNmjKDdM67OYm24ZNrxd1zY4WgI7ztuPlEy1PBW6uWhy8I6133v555Izx/Q==",
   "success": true,
-  "projectFilePath": "G:\\All Project\\Job_Assignment\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj",
+  "projectFilePath": "G:\\All Project\\GitHubUpdateCrud\\MVC_Core\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rukon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rukon\\.nuget\\packages\\jquery\\1.8.0\\jquery.1.8.0.nupkg.sha512",

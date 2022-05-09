@@ -15,6 +15,8 @@ namespace Expense_Tracker3.Controllers
     {
         private ApplicationContext db;
         IWebHostEnvironment webHostEnvironment;
+       
+
         public ExpenseController(ApplicationContext _db, IWebHostEnvironment _webHostEnvironment)
         {
             db = _db;
@@ -49,8 +51,14 @@ namespace Expense_Tracker3.Controllers
             if (ModelState.IsValid)
             {
                 db.Expenses.Add(expense);
-               await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+             bool isSaved=  await db.SaveChangesAsync()>0;
+
+
+                if (isSaved)
+                {
+                    ViewBag.Message = "Save Successfull!";
+                }
+
             }
 
             ViewData["CategoryId_Fk"] = new SelectList(db.Categories, "CategoryId", "Name", expense.CategoryId_Fk);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\All Project\\Job_Assignment\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj": {}
+    "G:\\All Project\\GitHubUpdateCrud\\MVC_Core\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj": {}
   },
   "projects": {
-    "G:\\All Project\\Job_Assignment\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj": {
+    "G:\\All Project\\GitHubUpdateCrud\\MVC_Core\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\All Project\\Job_Assignment\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj",
+        "projectUniqueName": "G:\\All Project\\GitHubUpdateCrud\\MVC_Core\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj",
         "projectName": "Expense_Tracker3",
-        "projectPath": "G:\\All Project\\Job_Assignment\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj",
+        "projectPath": "G:\\All Project\\GitHubUpdateCrud\\MVC_Core\\Expense_Tracker3\\Expense_Tracker3\\Expense_Tracker3.csproj",
         "packagesPath": "C:\\Users\\Rukon\\.nuget\\packages\\",
-        "outputPath": "G:\\All Project\\Job_Assignment\\Expense_Tracker3\\Expense_Tracker3\\obj\\",
+        "outputPath": "G:\\All Project\\GitHubUpdateCrud\\MVC_Core\\Expense_Tracker3\\Expense_Tracker3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

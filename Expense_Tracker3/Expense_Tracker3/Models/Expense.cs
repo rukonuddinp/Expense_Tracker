@@ -16,10 +16,11 @@ namespace Expense_Tracker3.Models
        
         [DisplayName("Category")]
         public int CategoryId_Fk { get; set; }
-        [Required, Today, DataType(DataType.Date)]
+        [Required, DataType(DataType.Date)]
         [DisplayFormat(DataFormatString ="{0:yyyy-MM-dd}", ApplyFormatInEditMode =true)]
         [DisplayName("Expense Date")]
         public DateTime Date { get; set; }
+        [Range(0, 5000)]
         public decimal Amount { get; set; }
 
         [ForeignKey("CategoryId_Fk")]
